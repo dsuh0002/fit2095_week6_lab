@@ -1,0 +1,40 @@
+<html>
+<head>
+<!-- <script>
+    var isbn = randomstring.generate(7);
+</script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/getAllBook">List Books</a>
+    <a href="/deleteBook">Delete Book</a>
+    <a href="/addNewAuthor">Add New Book</a>
+    <a href="/getAllAuthor">List Author</a>
+    <a href="/updateAuthor">Update Author</a>
+
+<form method="POST" action="/bookform">
+  <div class="container">
+    <h1>Add New Book</h1>
+    <hr>
+
+    <label for="titleinput"><b>Title</b></label>
+    <input type="text" placeholder="Enter Title" name="title" id="titleinput" required>
+
+    <label for="authorinput"><b>Author</b></label>
+    <input type="text" placeholder="Enter Author" name="author" id="authorinput" required>
+
+    <label for="isbninput"><b>ISBN</b></label>
+    <input type="text" placeholder="Enter ISBN" name="isbn" id="isbninput" required>
+
+    <label for="summaryinput"><b>Summary</b></label>
+    <input type="text" placeholder="Enter Summary" name="summary" id="summaryinput" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Add Book</button>
+  </div>
+</form>
+
+</body>
+</html>

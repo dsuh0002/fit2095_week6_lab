@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/addNewBook">Add New Book</a>
+    <a href="/getAllBook">List Books</a>
+    <a href="/addNewAuthor">Add New Author</a>
+    <a href="/getAllAuthor">List Author</a>
+    <a href="/updateAuthor">Update Author</a>
+
+<form method="POST" action="/deleteform">
+  <div class="container">
+    <h1>Delete Book</h1>
+    <hr>
+
+    <label for="isbninput"><b>ISBN</b></label>
+    <input type="text" placeholder="Enter ISBN" name="isbn" id="isbninput" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Delete Book</button>
+  </div>
+</form>
+
+</body>
+</html>

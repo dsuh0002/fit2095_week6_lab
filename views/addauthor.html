@@ -1,0 +1,53 @@
+<html>
+<head>
+<!-- <script>
+    var isbn = randomstring.generate(7);
+</script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/getAllAuthor">List Author</a>
+    <a href="/addNewBook">Add New Book</a>
+    <a href="/getAllBook">List Books</a>
+    <a href="/updateAuthor">Update Author</a>
+    <a href="/deleteBook">Delete Book</a>
+
+<form method="POST" action="/authorform">
+  <div class="container">
+    <h1>Add New Author</h1>
+    <hr>
+
+    <label for="fnameinput"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="firstName" id="fnameinput" required>
+
+    <label for="lnameinput"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lastName" id="lnameinput">
+
+    <label for="dobinput"><b>Date of Birthday</b></label><br/>
+    <input type="date" placeholder="Enter Date of Birthday" name="dob" id="dobinput" required>
+
+    <label>Address</label>
+    <label for="stateinput"><b>State</b></label>
+    <input type="text" placeholder="Enter State" name="state" id="stateinput" required>
+
+    <label for="suburbinput"><b>Suburb</b></label>
+    <input type="text" placeholder="Enter Suburb" name="suburb" id="suburbinput" required>
+
+    <label for="streetinput"><b>Street</b></label>
+    <input type="text" placeholder="Enter Street" name="street" id="streetinput" required>
+
+    <label for="unitinput"><b>Unit</b></label>
+    <input type="text" placeholder="Enter Unit" name="unit" id="unitinput" required>
+
+    <label for="numbooksinput"><b>Number of Books</b></label>
+    <input type="number" placeholder="Enter Number of Books" name="numBooks" id="numbooksinput" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Add Author</button>
+  </div>
+</form>
+
+</body>
+</html>

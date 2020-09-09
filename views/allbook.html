@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/addNewBook">Add New Book</a>
+    <a href="/deleteBook">Delete Book</a>
+    <a href="/addNewAuthor">Add New Author</a>
+    <a href="/getAllAuthor">List Author</a>
+    <a href="/updateAuthor">Update Author</a>
+<table id="book">
+  <tr>
+    <th>#</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Date</th>
+    <th>ISBN</th>
+    <th>Summary</th>
+  </tr>
+  <% for(let i = 0; i < ar.length; i++) { %>
+    <tr>
+        <td> <%= i+1 %> </td>
+        <td> <%= ar[i].title %> </td>
+        <td> <%= ar[i].author.name.firstName + " " + ar[i].author.name.lastName %> </td>
+        <td> <%= new Date(ar[i].dop).toLocaleDateString() %> </td>
+        <td> <%= ar[i].isbn %> </td>
+        <td> <%= ar[i].summary %> </td>
+    </tr>
+<% } %>
+</table>
+
+</body>
+</html>

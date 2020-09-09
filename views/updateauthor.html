@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/addNewBook">Add New Book</a>
+    <a href="/addNewAuthor">Add New Author</a>
+    <a href="/getAllBook">List Books</a>
+    <a href="/getAllAuthor">List Author</a>
+    <a href="/deleteBook">Delete Book</a>
+
+<form method="POST" action="/updateform">
+  <div class="container">
+    <h1>Update Author</h1>
+    <hr>
+
+    <label for="authoridinput"><b>Author ID</b></label>
+    <input type="text" placeholder="Enter Author ID" name="authorid" id="authoridinput" required>
+
+    <label for="numbooksinput"><b>Number of Books</b></label>
+    <input type="number" placeholder="Enter Number of Books" name="numbooks" id="numbooksinput" required>
+    </hr>
+
+    <button type="submit" class="registerbtn">Update Author</button>
+  </div>
+</form>
+
+</body>
+</html>
